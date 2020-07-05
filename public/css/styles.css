@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header, main, footer {
+    width: 1200px;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: #fff;
+}
+
+header {
+    border-bottom: 2px solid #eee;
+}
+
+main {
+    padding-bottom: 3em;
+}
+
+h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+    text-align: center;
+    text-indent: 0.25em;
+    text-transform: uppercase;
+    word-spacing: 0.25em;
+}
+
+.subtitle {
+    display: block;
+    color: gray;
+    font-size: 1em;
+    letter-spacing: 0.25em;
+    text-align: center;
+    text-indent: 0.25em;
+    text-transform: uppercase;
+    word-spacing: 0.25em;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+/***************************************************************************************************
+    FORMULARIO
+***************************************************************************************************/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    width: 320px;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 180px;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+    transition: border-bottom 0.25s ease-in;
+}
+
+.input:focus {
+    border-bottom: 1px solid cornflowerblue;
+    transition: border-bottom 0.25s ease-in;
+}
+
+.btn_blue {
+    width: 320px;
+    margin-top: 1em;
+    padding: 0.5em;
+    border: 1px solid cornflowerblue;
+    color: #fff;
+    background-color: cornflowerblue;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    text-indent: 0.5em;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.btn_blue:hover {
+    cursor: pointer;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.btn_blue:active {
+    background-color: #222;
+    border: 1px solid #fff;
+}
+
+/***************************************************************************************************
+    MEDIA QUERIES
+***************************************************************************************************/
+
+@media (max-width: 1200px) {
+    header, main, footer {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #fff;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .subtitle {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    label {
+        display: none;
+    }
+
+    .label {
+        width: calc(100vw - 4em);
+    }
+
+    .input {
+        width: calc(100vw - 4em);
+    }
+
+    .btn_blue {
+        width: calc(100vw - 4em);
+    }
+}

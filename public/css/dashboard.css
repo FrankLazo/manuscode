@@ -1,0 +1,149 @@
+body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.dashboard {
+    min-height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, main {
+    padding: 0;
+}
+
+header {
+    width: 15em;
+    height: 100vh;
+    background-color: #333;
+    border-bottom: unset;
+}
+
+main {
+    flex-grow: 1;
+    width: calc(100vw - 15em);
+}
+
+.title-link {
+    color: unset;
+}
+
+/***************************************************************************************************
+    HEADER
+***************************************************************************************************/
+
+.title {
+    height: 3em;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.title-correction {
+    font-weight: normal;
+}
+
+h1 {
+    padding-left: 1em;
+    background-color: #eee;
+    font-size: 1em;
+    letter-spacing: unset;
+    text-indent: unset;
+    text-transform: unset;
+    word-spacing: unset;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    padding: 1.25em;
+    border-bottom: 1px solid #666;
+    color: #fff;
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    color: #fff;
+    background-color: #666;
+}
+
+.actual {
+    padding-left: 1em;
+    border-left: 0.25em solid cornflowerblue;
+    font-weight: bold;
+    letter-spacing: 0.125em;
+}
+
+.li-title {
+    line-height: 1em;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    color: #666;
+    letter-spacing: 0.125em;
+}
+
+/***************************************************************************************************
+    MAIN - HEADER
+***************************************************************************************************/
+
+.head_dash {
+    background-color: #eee;
+    width: unset;
+    height: 3em;
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburguesa {
+    width: 2em;
+    height: 1em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.admin {
+    height: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.admin h2 {
+    font-size: 0.875em;
+    font-weight: normal;
+}
+
+.admin-foto {
+    width: 2em;
+    height: 2em;
+    margin-left: 0.5em;
+    background-color: #ccc;
+    border-radius: 1em;
+}
+
+/***************************************************************************************************
+    MAIN - SECTION
+***************************************************************************************************/
+
+main section {
+    padding: 2em 1.5em;
+}
+
+/***************************************************************************************************
+    FOOTER
+***************************************************************************************************/
+
+footer {
+    width: unset;
+    padding: 0.5em;
+}
